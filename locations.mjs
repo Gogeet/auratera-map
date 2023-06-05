@@ -8,6 +8,8 @@ const hriinDesc = "<p> HRIIN is the name of a settlement on the planet Auratera.
 const hriinriverDesc = "<p>The HRIIN RIVER is a body of water on the planet Auratera. It is located near the Erkeere Ridge and shares the same name as the settlement of Hriin. The Twi'lek and Human inhabitants of the city of Hriin primarily use the river as a source of water and food, as well as a means of transportation. The river's water also serves as a source of energy for the city, as the generators could convert the water into energy. However, the poor condition of the energy generators does not allow for a reliable power supply. The city itself is located on high cliffs above the river. (Nexus of Power, p. 50)</p>"
 const senoloroDesc = "<p>SENOLORO is the largest city on the planet Auratera. By the time of the Empire era, the settlement is inhabited by 30,000 residents of the Duros and human species. SENOLORO is located on a large flatland island at the planet's equator, surrounded by six inland seas and their rivers. Many farms are established along the region. The city is located one-third of the way around the planet from the Acablas ruins. Senoloro has the most advanced spaceport on the planet, consisting of several hangars with old freighters that could travel to the rest of the galaxy.<br />The city is led by a human autocrat named a Gouverneur.</p>"
 const squareDesc = "<p>On the world of Auratera, SQUARE SEA is the name of an artificial body of water with an area of 250,000 km².Visually, the lake is a square-shaped body of water, measuring approximately 500 kilometers on each side. Each side corresponds to a cardinal direction on a compass, and the lake is situated 800 kilometers west of the Acablas Ruins. The origins of the lake are largely unknown, although several legends suggested that it was constructed during the early Sith Wars. However, which of the two opposing sides was responsible for its construction remained a mystery. (Nexus of Power, p. 48 & 51)</p>";
+const peakDesc = "<p>DRAN'S PEAK is the name of a mountain peak in the Erkeere Range of the Outer Rim world Auratera. It is the largest mountain in the range, being twice as tall as the four adjacent peaks. Throughout history, the world has been repeatedly conquered by Sith Empires, causing the world's vergence to shift towards the Dark Side. The Sith conducted their Sith magic rituals on the peak. The summit can be seen from the vergence itself, the Acablas Ruins.</p>";
+const sithDesc = "<p>The former SITH PYRAMID would have been a stone temple of the Sith located at the Acablas Ruins on the world Auratera. Its structure would have been a recognizable pyramid shape with its entrance located on the right side of the crater's edge and extending halfway up the cone. At the edge of the temple, a ceremonial path would have lead away from the ruins to the once magnificent entrance lined with the remains of Sith statues. A long balcony would have protruded from the structure and extended high above the crater, although not directly over the opening of the crater. On this balcony, Sith alchemists would have conducted Sith rituals. (Nexus of Power, p. 81f.)</p>";
 
 const acablasDesc_short = "A natural rock formation with an underground cave on the planet Auratera featuring a vergence in the Force.";
 const crystalDesc_short = "An inland sea located near the Ithorian city of Dewbright.";
@@ -17,8 +19,8 @@ const hriinDesc_short = "A city located on the high cliffs above the Hriin River
 const hriinriverDesc_short = "A body of water located near the Erkeere Ridge which shares the same name as the settlement of Hriin.";
 const senoloroDesc_short = "The largest city on the planet Auratera, located on a large flatland island at the planet's equator.";
 const squareDesc_short = "An artificial body of water with an area of 250,000 km². Visually, the lake is a square-shaped body of water, with several legends suggested that it was constructed during the early Sith Wars.";
-
-
+const peakDesc_short = "The highest mountain in the Erkeere Range"
+const sithDesc_short ="The Sith Pyramid build by the ancient inhabitants of the planet";
 
 
 
@@ -26,10 +28,12 @@ const pointsOfInterest = [
   [1763, 455, "Acablas Ruins", acablasDesc_short, acablasDesc, "<img src=\"./img_loc/acablas.png\" alt=\"Image of the Acablas Ruins\"></img>"],
   [1333, 2441, "Crystal Sea", crystalDesc_short, crystalDesc, ],
   [1085, 2257, "Dewbright", dewDesc_short, dewDesc, "<img src=\"./img_loc/dewbright.png\" alt=\"Image of Dewbright\"></img>"],
+  [2336, 774, "Dran's Peak", peakDesc_short, peakDesc, "<img src=\"./img_loc/drans.png\" alt=\"Image of Dran's Peak\"></img>"],
   [2272, 1078, "Erkeere Ridge", erkeereDesc_short, erkeereDesc, "<img src=\"./img_loc/erkeere.png\" alt=\"Image of the Erkeere Ridge\"></img>"],
   [3408, 782, "Hriin", hriinDesc_short, hriinDesc, "<img src=\"./img_loc/hriin.png\" alt=\"Image of Hriin\"></img>"],
   [3767, 674, "Hriin River", hriinriverDesc_short, hriinriverDesc, ],
   [1002, 1217, "Senoloro", senoloroDesc_short, senoloroDesc, ],
+  [1720, 400, "Old Sith Pyramid", sithDesc_short, sithDesc, ],
   [990, 228, "Square Sea", squareDesc_short, squareDesc, "<img src=\"./img_loc/square.png\" alt=\"Image of the Square Sea\"></img>"],
 ];
 
