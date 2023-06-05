@@ -31,7 +31,7 @@ const imageBounds = L.latLngBounds(southWest, northEast);
 
 L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
-map.setView([-imageWidth / 2, imageHeight / 2], 0);
+map.setView([-imageHeight / 2, imageWidth / 2], 0);
 
 import pointsOfInterest from './locations.mjs';
 
