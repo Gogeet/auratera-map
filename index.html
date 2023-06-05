@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Galactic Map</title>
+  <title>Map of Auratera</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <div id="map"></div>
-  <div id="marker-links"></div>
-
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script defer src="map.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="column_map">
+      <div id="map"></div>
+      <div id="marker-links"></div>
+    </div>
+
+    <div class="column_text">
+      <div id="location_name"></div>
+      <div id="location_description"></div>
+      <div id="location_pics"></div>
+    </div>
+  </div>
 </body>
 </html>

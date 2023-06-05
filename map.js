@@ -36,7 +36,7 @@ map.setView([-imageWidth / 2, imageHeight / 2], 0);
 import pointsOfInterest from './locations.mjs';
 
 function createMarker(point) {
-  const [x, y, name, desc, ref] = point;
+  const [x, y, name, short_desc, desc, pics] = point;
   const pixelCoordinates = [x, y];
   const latLng = pixelToLatLng(pixelCoordinates);
   const marker = L.marker(latLng, {
@@ -58,18 +58,30 @@ function createMarker(point) {
 
   marker.bindTooltip('<b>' + name + '</b>');
 
-  let text = '<b>' + name + '</b><hr />' + desc;
+  let text = '<b>' + name + '</b><hr />' + short_desc;
 
-  if(ref !== undefined) {
-    text = text + '<hr />References:<br />' + ref;
-  }
-  
   marker.bindPopup(text);
   marker.addTo(map);
 
   marker._id = markerIndex;
   marker.on('click', function() {
     const markerId = this._id;
+    const locationName = document.getElementById('location_name');
+    const locationDescription = document.getElementById('location_description');
+    const locationPics = document.getElementById('location_pics');
+
+    const point = pointsOfInterest[markerId];
+
+    locationName.innerHTML = '<h2>' + name + '</h2><hr />';
+    locationDescription.innerHTML = desc;
+
+    if(pics !== undefined) {
+      locationPics.innerHTML = '<hr />' + pics;
+    } else {
+      locationPics.innerHTML = '';
+    }
+    
+
   });
   markers.push(marker);
 
