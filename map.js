@@ -1,3 +1,4 @@
+var i = 0;
 const customIcon = L.icon({
   iconUrl: 'icon.png',
   iconSize: [15, 15],
@@ -51,11 +52,15 @@ function createMarker(point) {
   const markerLinks = document.getElementById('marker-links');
   markerLinks.appendChild(link);
 
-  const span = document.createElement('span');
-  span.textContent = '  |  ';
-  span.classList.add('planet-link');
-  markerLinks.appendChild(span);
+  if(i < pointsOfInterest.length-1) {
+    const span = document.createElement('span');
+    span.textContent = '  |  ';
+    span.classList.add('planet-link');
+    markerLinks.appendChild(span);
+  }
 
+  i++;
+  
   marker.bindTooltip('<b>' + name + '</b>');
 
   let text = '<b>' + name + '</b><hr />' + short_desc;
