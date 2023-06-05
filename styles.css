@@ -25,7 +25,8 @@ body {
   text-align: center;
 }
 
-#location-pics img {
+#location-pics img,
+#location-description img {
   max-width: 100%;
 }
 
